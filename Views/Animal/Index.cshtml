@@ -1,0 +1,76 @@
+﻿@using Microsoft.EntityFrameworkCore
+@model DanieliPetShop.Models.Animal
+@inject DanieliPetShop.Data.ShopContext _context
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+table, th, td {
+  border:1px solid black;
+  text-align:center;
+}
+
+table {
+  margin-left:auto;
+  margin-right:auto;
+  width:55%;
+}
+
+img{
+    width:200px;
+    height:200px;
+}
+</style>
+
+<h1>@ViewBag.AnimalName details:</h1>
+<p>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Photo</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Purchase</th>
+        </tr>
+        <tr>
+            <td>@Html.DisplayFor(model => model.Name)</td>
+            <td>@Html.DisplayFor(model => model.Age)</td>
+            <td><img src="~/styles/images/@Model.Picture" /></td>
+            <td>@Html.DisplayFor(model => model.CategoryId)  
+                <div style="font-size:10px; margin-top:50px;">
+                    1 - mammal<br />
+                    2 - bird<br />
+                    3 - reptile<br />
+                    4 - fish<br />
+                </div>
+            </td>
+            <td>@Html.DisplayFor(model => model.Price)</td>
+            <td><a asp-action="ShowReceipt" asp-controller="Animal" asp-route-id="@Model.AnimalId">Buy</a></td> @*send a reciept*@
+        </tr>
+    </table><br />
+    <p>Description: @Html.DisplayFor(model => model.Description)</p><br />
+
+    <p>
+        Reviews:
+        <table>
+        <tr>
+            <th>ReviewId</th>
+            <th>Text</th>
+        </tr>
+        @foreach (var review in Model.Reviews!)
+        {
+        <tr>
+            <td>@review.ReviewId</td>
+            <td>@review.Text</td>
+        </tr>
+        }
+        </table>
+    </p>
+
+    <h5>Add Review - @Model.Name -</h5>   @*adding the user review about the animal*@
+    <form asp-action="AddReview" asp-controller="Animal" asp-route-id="@Model.AnimalId" asp-route-comment="comment">
+        <input name="comment" type="text"/>
+        <input value="post" type="submit"/>
+    </form>

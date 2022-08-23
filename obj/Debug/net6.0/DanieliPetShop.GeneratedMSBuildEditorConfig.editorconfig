@@ -1,0 +1,60 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = DanieliPetShop
+build_property.RootNamespace = DanieliPetShop
+build_property.ProjectDir = C:\Users\user\OneDrive\שולחן העבודה\study\asp.net\MidProject\PetShopWebsite-master\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\user\OneDrive\שולחן העבודה\study\asp.net\MidProject\PetShopWebsite-master
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/user/OneDrive/שולחן העבודה/study/asp.net/MidProject/PetShopWebsite-master/Views/Admin/EditPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdFBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/OneDrive/שולחן העבודה/study/asp.net/MidProject/PetShopWebsite-master/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/OneDrive/שולחן העבודה/study/asp.net/MidProject/PetShopWebsite-master/Views/Animal/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/OneDrive/שולחן העבודה/study/asp.net/MidProject/PetShopWebsite-master/Views/Animal/ShowReceipt.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsXFNob3dSZWNlaXB0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/OneDrive/שולחן העבודה/study/asp.net/MidProject/PetShopWebsite-master/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/OneDrive/שולחן העבודה/study/asp.net/MidProject/PetShopWebsite-master/Views/Insert/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zZXJ0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/OneDrive/שולחן העבודה/study/asp.net/MidProject/PetShopWebsite-master/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/OneDrive/שולחן העבודה/study/asp.net/MidProject/PetShopWebsite-master/Views/ShopTable/Filter.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFRhYmxlXEZpbHRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/OneDrive/שולחן העבודה/study/asp.net/MidProject/PetShopWebsite-master/Views/ShopTable/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFRhYmxlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/OneDrive/שולחן העבודה/study/asp.net/MidProject/PetShopWebsite-master/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/OneDrive/שולחן העבודה/study/asp.net/MidProject/PetShopWebsite-master/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

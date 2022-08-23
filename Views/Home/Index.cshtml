@@ -1,0 +1,52 @@
+﻿@model IEnumerable<DanieliPetShop.Models.Animal>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+table, th, td {
+  border:1px solid black;
+  text-align:center;
+}
+
+table {
+  margin-left:auto;
+  margin-right:auto;
+  width:50%;
+}
+
+img{
+    width:200px;
+    height:200px;
+}
+</style>
+
+<h1>Welcome to our website :)</h1>
+
+<p>In this website you can see all the animals that our shop suggests to purchase,</p>
+<p>from egales to turtles and horses or even cows !</p>
+<p>check out the navigating bar above - click the link you wish to reach &#128072</p><br />
+
+
+<h3>Here you can see our most reviewed animals:</h3>
+<p>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Photo</th>
+            <th>more details</th>
+        </tr>
+    @foreach (var animal in Model)
+    {
+        <tr>
+            <td>@animal.Name</td>
+            <td>@animal.Description</td>
+            <td><img src="~/styles/images/@animal.Picture"/></td>
+            <td><a asp-action="Index" asp-controller="Animal" asp-route-id="@animal.AnimalId">View Details</a></td>
+        </tr>
+    }
+    </table>
+</p>

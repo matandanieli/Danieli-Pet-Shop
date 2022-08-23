@@ -1,0 +1,42 @@
+﻿@model DanieliPetShop.Models.Animal
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Fill the details of the new animal</h2>
+
+<form method="post" asp-controller="Insert" asp-action="Add">
+    <div asp-validation-summary="All"></div>
+    <label asp-for="AnimalId"></label>
+    <input asp-for="AnimalId" />
+    <span asp-validation-for="AnimalId"></span>
+    <br />
+    <label asp-for="Name"></label>
+    <input asp-for="Name" />
+    <span asp-validation-for="Name"></span>
+    <br />
+    <label asp-for="Age"></label>
+    <input asp-for="Age" />
+    <span asp-validation-for="Age"></span>
+    <br />
+    <label asp-for="Picture"></label>
+    <input asp-for="Picture" />
+    <span asp-validation-for="Picture"></span>
+    <br />
+    <label asp-for="CategoryId"></label>
+    <input asp-for="CategoryId" />
+    <span asp-validation-for="CategoryId"></span>
+    <br />
+    <label asp-for="Price"></label>
+    <input asp-for="Price" />
+    <span asp-validation-for="Price"></span>
+    <br />
+    <label asp-for="Description"></label>
+    <input asp-for="Description" />
+    <span asp-validation-for="Description"></span>
+    <br />
+    <input type="submit" value="Update" />
+</form>
+

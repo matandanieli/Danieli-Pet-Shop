@@ -1,0 +1,57 @@
+﻿@model IEnumerable<DanieliPetShop.Models.Animal>
+
+@{
+    ViewBag.Title = "Filter";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+table, th, td {
+  border:1px solid black;
+  text-align:center;
+}
+
+table {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+fieldset{
+  width: 400px;
+  margin: 0 auto;
+}
+</style>
+
+<h2>Here you can choose the animal you wish to buy</h2>
+<p>for picture and more details about the animal click the "view details" button</p>
+<p>
+        <form asp-controller="ShopTable" asp-action="Filter" method="post">
+        <fieldset style="width:50px">
+            <select id="Category" style="width:130px" name="category">
+            <option value="Show all">Show all</option>
+            <option value="Bird">Birds</option>
+            <option value="Mammal">Mammals</option>
+            <option value="Fish">Fishes</option>
+            <option value="Reptile">Reptile</option>
+            </select>
+            <input class="submit" style="width:100px;margin-left:30px;" type="submit" value="Show"/>
+        </fieldset>
+    </form>
+
+    <table style="width:50%">
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>more details</th>
+        </tr>
+    @foreach (var animal in Model)
+    {
+        <tr>
+            <td>@animal.Name</td>
+            <td>@animal.Description</td>
+            <td><a asp-action="Index" asp-controller="Animal" asp-route-id="@animal.AnimalId">View Details</a></td>
+        </tr>
+    }
+    </table>
+</p>
+

@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/styles/style.css">
+    <link href="~/styles/bootstrap.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="~/styles/favicon.ico"/>
+</head>
+
+<body>
+    <div>
+    <h1 id="h1">Danieli's Pet Shop !</h1>
+    <ul>
+        <li><img src="/styles/images/titledLogo.jpg" id="logo"/></li>
+        <li><a asp-action="Index" asp-controller="Home">Home</a></li>
+        <li><a asp-action="Index" asp-controller="ShopTable">Shop</a></li>
+        <li><a asp-action="Index" asp-controller="Admin">Administrator</a></li>
+    </ul>
+        <div>@RenderBody()</div>
+    </div>
+    <script src="~/scripts/bootstrap.js"></script>
+    <script src="~/scripts/popper.js"></script>
+    <script src="~/scripts/jquery.js"></script>
+</body>
+</html>

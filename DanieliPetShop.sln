@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DanieliPetShop", "DanieliPetShop.csproj", "{EE69940C-0B03-49C2-B2CE-F9B96DB6C64B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DanieliPetShop.Tests", "..\DanieliPetShop.Tests\DanieliPetShop.Tests.csproj", "{ECFC0399-CE3E-488A-973B-10D8FB44BBC8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE69940C-0B03-49C2-B2CE-F9B96DB6C64B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE69940C-0B03-49C2-B2CE-F9B96DB6C64B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE69940C-0B03-49C2-B2CE-F9B96DB6C64B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE69940C-0B03-49C2-B2CE-F9B96DB6C64B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECFC0399-CE3E-488A-973B-10D8FB44BBC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECFC0399-CE3E-488A-973B-10D8FB44BBC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECFC0399-CE3E-488A-973B-10D8FB44BBC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECFC0399-CE3E-488A-973B-10D8FB44BBC8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {369B1B8D-CA7B-4071-81F4-D62A79916F56}
+	EndGlobalSection
+EndGlobal

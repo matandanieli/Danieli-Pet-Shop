@@ -1,0 +1,25 @@
+﻿@model DanieliPetShop.Models.Animal
+
+@{
+    ViewBag.Title = "ShowReceipt";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    img{
+    width:200px;
+    height:200px;
+}
+</style>
+<h1>Here is your receipt about your last purchase</h1>
+<p>
+      animal bought: @Html.DisplayFor(model => model.Name)<br />
+      price paid: @Html.DisplayFor(model => model.Price)
+
+      <div>We are thank you for using our website and purchase an animal <br />
+          we want to wish you a great time with @Model.Name and hope <br />
+          for a good life togther &#128147 !</div><br />
+
+      <img src="~/styles/images/@Model.Picture" />
+</p>
+
