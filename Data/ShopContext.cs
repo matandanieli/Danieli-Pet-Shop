@@ -11,7 +11,7 @@ namespace DanieliPetShop.Data
         public DbSet<Category>? Categories { get; set; }
         public DbSet<Review>? Reviews { get; set; }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder) //creating all the database.
+        protected override void OnModelCreating(ModelBuilder modelBuilder) //creating all the init database.
         {
             modelBuilder.Entity<Category>().HasData(
                 new { CategoryId = 1, Name = "Mammal" },

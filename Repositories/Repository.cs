@@ -48,7 +48,11 @@ namespace DanieliPetShop.Repositories
             _context.SaveChanges();
         }
 
-        public IEnumerable<Animal> GetAnimals() => _context.Animals!; //get all the animals the in data base
+        public IEnumerable<Animal> GetAnimals() //get all the animals the in data base
+        {
+            var animals = _context.Animals!.Include(c => c.Category).ThenInclude(c => c!.Animals!).ThenInclude(c => c.Reviews);
+            return animals;
+        }
         public IEnumerable<Category> GetCategories() => _context.Categories!; //get all the categories in the data base
 
         public Animal AddReview(int id, string comment)
