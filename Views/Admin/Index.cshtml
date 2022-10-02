@@ -18,10 +18,9 @@ table {
 
 <h1>Admin Area</h1>
 <p>
-<a asp-action="Index" asp-controller="Insert">Insert a new animal</a>
+<a class="btn btn-primary" asp-action="Index" asp-controller="Insert">Insert a new animal</a>
     <table style="width:50%">
         <tr>
-            <th>Id</th>
             <th>Name</th>
             <th>Description</th>
             <th>Edit</th>
@@ -30,11 +29,10 @@ table {
     @foreach (var animal in _context.Animals!)
     {
         <tr>
-            <td>@animal.AnimalId</td>
             <td>@animal.Name</td>
             <td>@animal.Description</td>
-            <td><a asp-action="EditPage" asp-controller="Admin" asp-route-id="@animal.AnimalId">edit</a></td>
-            <td><a asp-action="Delete" asp-controller="Admin" asp-route-id="@animal.AnimalId">Delete</a></td>
+            <td><a class="btn btn-primary" asp-action="EditPage" asp-controller="Admin" asp-route-id="@animal.AnimalId">edit</a></td>
+            <td><a class="btn btn-primary" asp-action="Delete" asp-controller="Admin" asp-route-id="@animal.AnimalId">Delete</a></td>
         </tr>
     }
     </table>

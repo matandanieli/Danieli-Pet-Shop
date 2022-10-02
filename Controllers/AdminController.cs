@@ -27,7 +27,7 @@ namespace DanieliPetShop.Controllers
 
         public IActionResult Edit(int id, Animal animal) //edit the props after click the edit button in edit page.
         {
-            _repository.EditAnimal(id, animal);
+            _repository.EditAnimal(id, animal); // add validation
             return RedirectToAction("Index");
         }
 

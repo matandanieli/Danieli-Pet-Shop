@@ -9,10 +9,6 @@
 
 <form method="post" asp-controller="Insert" asp-action="Add">
     <div asp-validation-summary="All"></div>
-    <label asp-for="AnimalId"></label>
-    <input asp-for="AnimalId" />
-    <span asp-validation-for="AnimalId"></span>
-    <br />
     <label asp-for="Name"></label>
     <input asp-for="Name" />
     <span asp-validation-for="Name"></span>
@@ -37,6 +33,6 @@
     <input asp-for="Description" />
     <span asp-validation-for="Description"></span>
     <br />
-    <input type="submit" value="Update" />
+    <input type="submit" value="Add" />
 </form>
 

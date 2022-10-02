@@ -35,7 +35,7 @@ fieldset{
             <option value="Fish">Fishes</option>
             <option value="Reptile">Reptile</option>
             </select>
-            <input class="submit" type="submit" value="Filter"/>
+            <input btn btn-secondary class="submit" type="submit" value="Filter"/>
         </fieldset>
     </form>
 
@@ -50,7 +50,7 @@ fieldset{
         <tr>
             <td>@animal.Name</td>
             <td>@animal.Description</td>
-            <td><a asp-action="Index" asp-controller="Animal" asp-route-id="@animal.AnimalId">View Details</a></td>
+            <td><a btn btn-primary asp-action="Index" asp-controller="Animal" asp-route-id="@animal.AnimalId">View Details</a></td>
         </tr>
     }
     </table>

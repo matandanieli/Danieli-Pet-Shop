@@ -8,10 +8,6 @@
 <h2>Edit - @ViewBag.Name</h2>
 
 <form method="post" asp-controller="Admin" asp-action="Edit" asp-route-id="@Model.AnimalId">
-      <label asp-for="AnimalId"></label>
-        <input asp-for="AnimalId" />
-        <span asp-validation-for="AnimalId"></span>
-        <br />
         <label asp-for="Name"></label>
         <input asp-for="Name" />
         <span asp-validation-for="Name"></span>
@@ -24,9 +20,9 @@
         <input asp-for="Picture" />
         <span asp-validation-for="Picture"></span>
         <br />
-        <label asp-for="CategoryId"></label>
-        <input asp-for="CategoryId" />
-        <span asp-validation-for="CategoryId"></span>
+        <label asp-for="Category"></label>
+        <input asp-for="Category" />
+        <span asp-validation-for="Category"></span>
         <br />
         <label asp-for="Price"></label>
         <input asp-for="Price" />
@@ -36,5 +32,5 @@
         <input asp-for="Description" />
         <span asp-validation-for="Description"></span>
         <br />
-        <input type="submit" value="Update" />
+        <input btn btn-primary type="submit" value="Update" />
     </form>

@@ -1,27 +1,19 @@
-﻿#h1, div > div {
+﻿#h1 {
+    text-align: center;
+    font-size:70px;
+    font-weight:700;
+    color:white;
+}
+
+div {
+    font-weight: 600;
+    font-size: x-large;
     text-align: center;
 }
 
 #logo {
     width:100px;
     Height:100px;
-}
-
-div{
-    font-weight: 600;
-    font-size: x-large;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 60px;
-    position:absolute;
-}
-
-li a {
-    display: block;
 }
 
 img{

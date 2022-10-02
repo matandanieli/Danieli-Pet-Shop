@@ -50,16 +50,16 @@ namespace DanieliPetShop.Repositories
 
         public IEnumerable<Animal> GetAnimals() //get all the animals the in data base
         {
-            var animals = _context.Animals!.Include(c => c.Category).ThenInclude(c => c!.Animals!).ThenInclude(c => c.Reviews);
+            var animals = _context.Animals!.Include(c => c.Category).
+                ThenInclude(c => c!.Animals!).ThenInclude(c => c.Reviews); //create a list of animls with all their props.
             return animals;
         }
-        public IEnumerable<Category> GetCategories() => _context.Categories!; //get all the categories in the data base
 
-        public Animal AddReview(int id, string comment)
+        public Animal AddReview(int id, string comment, string writer)
         {
             var animalFound = FindAnimalById(id);
 
-            Review review = new() { Text = comment, AnimalId = id };
+            Review review = new() { Text = comment, AnimalId = id, Writer=writer };
             animalFound.Reviews!.Add(review);
 
             _context.SaveChanges();
@@ -68,7 +68,8 @@ namespace DanieliPetShop.Repositories
 
         public Animal FindAnimalById(int id)
         {
-            var categories = _context.Animals!.Include(c => c.Category).ThenInclude(c => c!.Animals!).ThenInclude(c => c.Reviews);
+            var categories = _context.Animals!.Include(c => c.Category).
+                ThenInclude(c => c!.Animals!).ThenInclude(c => c.Reviews); //create a list of animls with all their props.
             var animal = categories!.Single(m => m.AnimalId == id);
             return animal;
         }

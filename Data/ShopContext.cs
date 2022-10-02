@@ -30,11 +30,11 @@ namespace DanieliPetShop.Data
             );
 
             modelBuilder.Entity<Review>().HasData(
-                new { ReviewId = 1, AnimalId = 1, Text = "Great price"},
-                new { ReviewId = 2, AnimalId = 2, Text = "Quick delivery"},
-                new { ReviewId = 3, AnimalId = 1, Text = "8 feet tall"},
-                new { ReviewId = 4, AnimalId = 2, Text = "huge wings width"},
-                new { ReviewId = 5, AnimalId = 3, Text = "crawling slowly"}
+                new { ReviewId = 1, AnimalId = 1, Text = "Great price", Writer= "moshe"},
+                new { ReviewId = 2, AnimalId = 2, Text = "Quick delivery", Writer = "anat" },
+                new { ReviewId = 3, AnimalId = 1, Text = "8 feet tall", Writer = "david" },
+                new { ReviewId = 4, AnimalId = 2, Text = "huge wings width", Writer = "josh" },
+                new { ReviewId = 5, AnimalId = 3, Text = "crawling slowly", Writer = "drake" }
             );
         }
     }

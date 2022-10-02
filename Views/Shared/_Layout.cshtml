@@ -11,13 +11,18 @@
 
 <body>
     <div>
+    <navbar class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="/styles/images/titledLogo.jpg" id="logo"/>
+        <a class="nav-link active" asp-action="Index" asp-controller="Home">Home</a>
+        <a class="nav-link active" asp-action="Index" asp-controller="ShopTable">Shop</a>
+        <a class="nav-link active" asp-action="Index" asp-controller="Admin">Administrator</a>
+    </navbar>
+    <div class="p-1 text-center bg-image"
+    style="
+      background-image: url('https://th.bing.com/th/id/OIP.KATdgDHf7ObSZjaH743bTwHaED?pid=ImgDet&rs=1');
+      height: 100px;">
     <h1 id="h1">Danieli's Pet Shop!</h1>
-    <ul>
-        <li><img src="/styles/images/titledLogo.jpg" id="logo"/></li>
-        <li><a asp-action="Index" asp-controller="Home">Home</a></li>
-        <li><a asp-action="Index" asp-controller="ShopTable">Shop</a></li>
-        <li><a asp-action="Index" asp-controller="Admin">Administrator</a></li>
-    </ul>
+    </div>
         <div>@RenderBody()</div>
     </div>
     <script src="~/scripts/bootstrap.js"></script>

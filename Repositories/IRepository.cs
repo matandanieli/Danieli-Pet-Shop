@@ -10,6 +10,6 @@ namespace DanieliPetShop.Repositories
         void DeleteAnimal(int id);
         List<Animal> GetTopReviewed();
         List<Animal> GetAnimalsByCategory(string category);
-        Animal AddReview(int id, string comment);
+        Animal AddReview(int id, string comment, string writer);
     }
 }

@@ -22,13 +22,17 @@ img{
     height:200px;
 }
 </style>
-
+<div style="
+      background-image: url('https://th.bing.com/th/id/R.d0ee86c0714881af4b81206014406266?rik=ukzEKHltlusTzg&riu=http%3a%2f%2fwww.heymon.net%2f2002pictures%2f082002%2fzoo%2fS_08_04_95ZooElephant.jpg&ehk=iTvJj0%2fbi%2bczMl81y3YjHjflSSQ%2ftz9begn71PPXDvs%3d&risl=&pid=ImgRaw&r=0');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;">
 <h1>Welcome to our website :)</h1>
 
-<p>In this website you can see all the animals that our shop suggests to purchase,</p>
-<p>from egales to turtles and horses or even cows !</p>
-<p>check out the navigating bar above - click the link you wish to reach &#128072</p><br />
-
+<p>
+    In this website you can see all the animals that our shop suggests to purchase,</br>
+    from egales to turtles and horses or even cows !</br>
+    check out the navigating bar above - click link you wish to reach<br/>
+</p>
 
 <h3>Here you can see our most reviewed animals:</h3>
 <p>
@@ -45,8 +49,9 @@ img{
             <td>@animal.Name</td>
             <td>@animal.Description</td>
             <td><img src="~/styles/images/@animal.Picture"/></td>
-            <td><a asp-action="Index" asp-controller="Animal" asp-route-id="@animal.AnimalId">View Details</a></td>
+            <td><a class="btn btn-secondary" asp-action="Index" asp-controller="Animal" asp-route-id="@animal.AnimalId">View Details</a></td>
         </tr>
     }
     </table>
 </p>
+</div>

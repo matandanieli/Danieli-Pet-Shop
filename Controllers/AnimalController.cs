@@ -15,7 +15,6 @@ namespace DanieliPetShop.Controllers
         public IActionResult Index(int id) //show all the details about this animal.
         {
             var animal = _repository.GetAnimals().Single(a => a.AnimalId == id);
-            ViewBag.AnimalName = animal.Name;
             return View(animal);
         }
 
@@ -26,11 +25,11 @@ namespace DanieliPetShop.Controllers
             _repository.DeleteAnimal(id);
             return View(animal);
         }
-        public IActionResult AddReview(int id, string comment)
+        public IActionResult AddReview(int id, string comment, string writer)
         {
             if (ModelState.IsValid)
             {
-                var animalFound = _repository.AddReview(id, comment);
+                var animalFound = _repository.AddReview(id, comment, writer);
                 return View("Index", animalFound);
             }
             else return View();
